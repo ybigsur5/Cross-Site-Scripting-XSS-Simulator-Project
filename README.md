@@ -11,3 +11,9 @@ This is a basic Cross-Site Scripting (XSS) Simulator tool written in HTML, CSS, 
 2. Simulation:
    - Click the "Simulate XSS" button.
    - View the simulated output below the button.
+
+🚩Note for the demo sandbox:🚩
+
+This is a basic demo sandbox to simulate the project. Note that in real life, you might isolate the code using iframes or similar techniques. This is just a simple example of using an iframe to create a basic sandbox for simulating code execution. 
+
+The sandbox attribute in the <iframe> tag is set to "allow-scripts," which allows the iframe to execute scripts. 
