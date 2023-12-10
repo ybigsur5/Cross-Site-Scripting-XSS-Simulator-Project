@@ -51,8 +51,6 @@
             // Display the payload in the output div for demonstration
             outputDiv.innerHTML = 'Output: ' + payload;
 
-            // In a real-world scenario, you would not execute the payload directly but rather demonstrate its impact.
-            // This example is for educational purposes only and should not be used maliciously.
         }
     </script>
 </body>
