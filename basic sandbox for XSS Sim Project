@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Simulator with Sandbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        #output {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>XSS Simulator with Sandbox</h1>
+    <p>Enter your XSS payload below:</p>
+    <textarea id="payload"></textarea>
+    <button onclick="simulateXSS()">Simulate XSS</button>
+    <h2>Output:</h2>
+    <div id="output"></div>
+    <h2>Sandbox:</h2>
+    <iframe id="sandbox" sandbox="allow-scripts"></iframe>
+
+    <script>
+        function simulateXSS() {
+            const payload = document.getElementById('payload').value;
+            const outputDiv = document.getElementById('output');
+            const sandboxFrame = document.getElementById('sandbox');
+            
+            // Simulate XSS by injecting the payload into the sandbox
+            sandboxFrame.contentDocument.body.innerHTML = payload;
+
+            // Display the payload in the output div for demonstration
+            outputDiv.innerHTML = 'Output: ' + payload;
+
+            // In a real-world scenario, you would not execute the payload directly but rather demonstrate its impact.
+            // This example is for educational purposes only and should not be used maliciously.
+        }
+    </script>
+</body>
+</html>
