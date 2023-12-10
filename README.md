@@ -1,4 +1,4 @@
-#Cross-Site-Scripting-XSS-Simulator-Project
+# Cross-Site-Scripting-XSS-Simulator-Project
 
 This is a basic Cross-Site Scripting (XSS) Simulator tool written in HTML, CSS, and JavaScript. It allows users to input an XSS payload, simulating the execution without causing harm. The tool serves an educational purpose, demonstrating potential vulnerabilities and emphasizing responsible and ethical use.
 
