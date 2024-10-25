@@ -1,4 +1,4 @@
-# 🛡️ XSS Simulator with Sandbox
+# 🛡️ Cross-Site Scripting (XSS) Simulator
 
 A web-based Cross-Site Scripting (XSS) simulator with sandbox functionality for educational purposes. This tool allows safe testing and understanding of XSS vulnerabilities in a controlled environment.
 
